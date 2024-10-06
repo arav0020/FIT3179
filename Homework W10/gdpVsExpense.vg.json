@@ -89,7 +89,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain":  [1, 10, 30, 50]
+            "domain": [1, 10, 30, 50]
           },
           "legend": { "format": ".1s" }
         },
@@ -115,13 +115,43 @@
             ]
           }
         },
-        "opacity": { "value": 0.6 },
+        "opacity": { "value": 0.8 },
         "tooltip": [
           { "field": "Entity", "type": "nominal", "title": "Country" },
-          { "field": "Expense (Billion USD$)", "type": "quantitative", "format": ".2f" },
-          { "field": "GDP (Billion USD$)", "type": "quantitative", "format": ".2f" },
-          { "field": "Expense percentage of GDP", "type": "quantitative", "format": ".2f" }
+          {
+            "field": "Expense (Billion USD$)",
+            "type": "quantitative",
+            "format": ".2f"
+          },
+          {
+            "field": "GDP (Billion USD$)",
+            "type": "quantitative",
+            "format": ".2f"
+          },
+          {
+            "field": "Expense percentage of GDP",
+            "type": "quantitative",
+            "format": ".2f"
+          }
         ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "x": 900, "y": 12000, "label": "The USA has the highest GDP of almost 21 Billion USD$" },
+          { "x": 0.53, "y": 0.1, "label": "The Marshall Islands have one of the largest Expense:GDP ratios" }
+        ]
+      },
+      "mark": "text",
+      "encoding": {
+        "x": { "field": "x", "type": "quantitative" },
+        "y": { "field": "y", "type": "quantitative" },
+        "text": { "field": "label", "type": "nominal" },
+        "color": { "value": "black" },
+        "size": { "value": 12 },
+        "stroke": { "value": "black" },
+        "strokeWidth": { "value": 0.5 }
       }
     }
   ]

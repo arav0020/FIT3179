@@ -23,7 +23,7 @@
     />
 
     <!-- CSS file -->
-    <link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="Homework W10/styles.css" media="all" />
   </head>
 
   <body>
@@ -52,12 +52,12 @@
     </div>
 
     <script type="text/javascript">
-      var choroplethMap = "gdpMap.vg.json";
+      var choroplethMap = "Homework W10/gdpMap.vg.json";
       vegaEmbed("#choropleth_map", choroplethMap)
         .then(function (result) {})
         .catch(console.error);
 
-      var scatterPlot = "gdpVsExpense.vg.json";
+      var scatterPlot = "Homework W10/gdpVsExpense.vg.json";
       vegaEmbed("#scatter_plot", scatterPlot)
         .then(function (result) {})
         .catch(console.error);
