@@ -4,7 +4,7 @@
   "height": 600,
   "title": "Global Expense vs GDP",
   "data": {
-    "url": "https://raw.githubusercontent.com/arav0020/FIT3179/refs/heads/main/Homework%20W10/data/expenseVsGDP.csv"
+    "url": "https://raw.githubusercontent.com/arav0020/FIT3179-Homework/refs/heads/main/Homework%20W10/data/expenseVsGDP.csv"
   },
   "params": [
     {
