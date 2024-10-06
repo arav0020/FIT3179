@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "World GDP (In Billion USD$) in 2022",
+  "title": "World GDP (In Billion USD$)",
   "width": 800,
   "height": 400,
   "data": {
@@ -8,6 +8,19 @@
     "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
   },
   "projection": { "type": "equalEarth" },
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1960,
+        "max": 2022,
+        "step": 1,
+        "name": "Year Selector: "
+      }
+    }
+  ],
   "layer": [
     {
       "transform": [
