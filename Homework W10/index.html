@@ -11,10 +11,18 @@
   <body>
     <div id="choropleth_map"></div>
 
+    <div id="scatter_plot"></div>
+
     <script type="text/javascript">
       var spec2 = "gdpMap.vg.json";
       vegaEmbed("#choropleth_map", spec2)
         .then(function (result) {})
+        .catch(console.error);
+
+      var spec2 = "gdpVsExpense.vg.json";
+      vegaEmbed("#scatter_plot", spec2)
+        .then(function (result) {
+        })
         .catch(console.error);
     </script>
   </body>
