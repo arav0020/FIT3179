@@ -36,12 +36,12 @@
     {
       "transform": [
         {
-          "lookup": "properties.NAME",
+          "lookup": "properties.ISO_A3",
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/arav0020/FIT3179/refs/heads/main/Homework%20W10/data/worldGDP.csv"
             },
-            "key": "Entity",
+            "key": "Code",
             "fields": ["Year", "GDP"]
           }
         },
